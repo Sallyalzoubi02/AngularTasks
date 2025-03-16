@@ -22,9 +22,9 @@ export class ProductComponent {
   getData() {
     this.categoryId = this.route.snapshot.paramMap.get("id");
 
-    this.mys.getProducts(this.categoryId).subscribe((data) => {
+    this.mys.getProducts().subscribe((data) => {
 
-      this.products = data
+      this.products = data.filter((p: any) => p.categoryId == this.categoryId)
     })
   }
 }

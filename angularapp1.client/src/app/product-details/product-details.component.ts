@@ -18,7 +18,7 @@ export class ProductDetailsComponent {
   }
 
   getProduct() {
-    this.pId = Number(this.route.snapshot.paramMap.get("id")); // Convert to number
+    this.pId = Number(this.route.snapshot.paramMap.get("id")); 
     this.service.getProductsByID(this.pId).subscribe(data => {
       this.product = data;
     });
