@@ -11,20 +11,37 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { FormsModule } from '@angular/forms';
-
+import { AddProductComponent } from './Admin/add-product/add-product.component';
+import { AddCategoryComponent } from './Admin/add-category/add-category.component';
+import { GetCategoriesComponent } from './Admin/get-categories/get-categories.component';
+import { GetProductsComponent } from './Admin/get-products/get-products.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavBarComponent,  // ✅ Make sure this is included
+    NavBarComponent,  
     SignInComponent,
     SignUpComponent,
     CategoryComponent,
     ProductComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    AddProductComponent,
+    AddCategoryComponent,
+    GetCategoriesComponent,
+    GetProductsComponent,
+    DashboardComponent,
+    GetCategoryProductsComponent
   ],
   imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    MatOptionModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,

@@ -12,9 +12,14 @@ export class ServicesService {
   getCategories() {
     return this._url.get<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories");
   }
-
+  addCategories(data: any) {
+    return this._url.post<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/categories",data);
+  }
   getProducts(): Observable<any[]> {
     return this._url.get<any[]>("https://67cd64b6dd7651e464ee3d63.mockapi.io/products");
+  }
+  addProducts(data: any) {
+    return this._url.post<any>("https://67cd64b6dd7651e464ee3d63.mockapi.io/products", data);
   }
 
   getProductsByID(id: number): Observable<any> {

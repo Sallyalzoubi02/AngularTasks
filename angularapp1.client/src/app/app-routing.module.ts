@@ -6,6 +6,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { AddProductComponent } from './Admin/add-product/add-product.component';
+import { AddCategoryComponent } from './Admin/add-category/add-category.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { GetCategoriesComponent } from './Admin/get-categories/get-categories.component';
+import { GetProductsComponent } from './Admin/get-products/get-products.component';
+import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,7 +20,18 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent },
   { path: 'product/:id', component: ProductComponent },
   { path: 'ProD/:id', component: ProductDetailsComponent },
-
+  { path: 'addCategory', component: AddCategoryComponent },
+  { path: 'addProduct/:id', component: AddProductComponent },
+  {
+    path: 'dashboard', component: DashboardComponent, children: [
+      { path: 'getCategories', component: GetCategoriesComponent },
+      { path: 'getProdacts', component: GetProductsComponent },
+      { path: 'addCategory', component: AddCategoryComponent },
+      { path: 'addProduct', component: AddProductComponent },
+      { path: 'getCategoryProducts/:id', component: GetCategoryProductsComponent },
+      { path: '', redirectTo: '/dashboard/getCategories', pathMatch: 'full' } // Default route
+    ]
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' } // Default route
 ];
 
