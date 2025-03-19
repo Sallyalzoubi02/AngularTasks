@@ -12,6 +12,8 @@ import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 import { GetCategoriesComponent } from './Admin/get-categories/get-categories.component';
 import { GetProductsComponent } from './Admin/get-products/get-products.component';
 import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
+import { EditProductComponent } from './Admin/edit-product/edit-product.component';
+import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
       { path: 'addCategory', component: AddCategoryComponent },
       { path: 'addProduct', component: AddProductComponent },
       { path: 'getCategoryProducts/:id', component: GetCategoryProductsComponent },
+      { path: 'editProduct/:id', component: EditProductComponent },
+      { path: 'editCategory/:id', component: EditCategoryComponent },
       { path: '', redirectTo: '/dashboard/getCategories', pathMatch: 'full' } // Default route
     ]
   },

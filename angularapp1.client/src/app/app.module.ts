@@ -20,6 +20,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
+import { EditProductComponent } from './Admin/edit-product/edit-product.component';
+import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { GetCategoryProductsComponent } from './Admin/get-category-products/get-
     GetCategoriesComponent,
     GetProductsComponent,
     DashboardComponent,
-    GetCategoryProductsComponent
+    GetCategoryProductsComponent,
+    EditProductComponent,
+    EditCategoryComponent
   ],
   imports: [
     MatFormFieldModule,

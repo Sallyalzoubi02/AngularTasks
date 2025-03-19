@@ -7,6 +7,7 @@
         <th>#</th>
         <th>name</th>
         <th>products</th>
+        <th>edit Catigory</th>
       </tr>
     </thead>
     <tbody>
@@ -14,6 +15,7 @@
         <td>{{category.id}}</td>
         <td>{{category.name}}</td>
         <td><a routerLink="/dashboard/getCategoryProducts/{{category.id}}" class="btn btn-success">View products</a></td>
+        <td><a routerLink="/dashboard/editCategory/{{category.id}}" class="btn btn-success">edit Catigory</a></td>
       </tr>
 
     </tbody>

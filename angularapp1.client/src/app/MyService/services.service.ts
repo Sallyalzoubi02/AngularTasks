@@ -26,6 +26,17 @@ export class ServicesService {
     return this._url.get(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`);
   }
 
+  editProducts(id: number, data: any): Observable<any> {
+    return this._url.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`,data)
+  }
+
+  getCategoryById(id: number) {
+    return this._url.get<any>(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`);
+  }
+  editCategory(id: number, data: any): Observable<any> {
+    return this._url.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`, data)
+  }
+
   addUser(data: any) {
     return this._url.post<any>("https://67cea6ee125cd5af757b6514.mockapi.io/Users", data);
   }
