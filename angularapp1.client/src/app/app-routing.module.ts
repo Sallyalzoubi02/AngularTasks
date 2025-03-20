@@ -14,6 +14,7 @@ import { GetProductsComponent } from './Admin/get-products/get-products.componen
 import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
 import { EditProductComponent } from './Admin/edit-product/edit-product.component';
 import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
+import { ProfileComponent } from './User/profile/profile.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'ProD/:id', component: ProductDetailsComponent },
   { path: 'addCategory', component: AddCategoryComponent },
   { path: 'addProduct/:id', component: AddProductComponent },
+  { path: 'profile', component: ProfileComponent },
   {
     path: 'dashboard', component: DashboardComponent, children: [
       { path: 'getCategories', component: GetCategoriesComponent },

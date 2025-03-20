@@ -45,4 +45,8 @@ export class ServicesService {
     return this._url.get("https://67cea6ee125cd5af757b6514.mockapi.io/Users");
   }
 
+  editUser(id: number, data: any): Observable<any> {
+    return this._url.put(`https://67cea6ee125cd5af757b6514.mockapi.io/Users/${id}`, data)
+  }
+
 }

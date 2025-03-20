@@ -22,6 +22,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { GetCategoryProductsComponent } from './Admin/get-category-products/get-category-products.component';
 import { EditProductComponent } from './Admin/edit-product/edit-product.component';
 import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
+import { ProfileComponent } from './User/profile/profile.component';
+import { EditProfileComponent } from './User/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { EditCategoryComponent } from './Admin/edit-category/edit-category.compo
     DashboardComponent,
     GetCategoryProductsComponent,
     EditProductComponent,
-    EditCategoryComponent
+    EditCategoryComponent,
+    ProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     MatFormFieldModule,
