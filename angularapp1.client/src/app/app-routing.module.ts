@@ -15,6 +15,9 @@ import { GetCategoryProductsComponent } from './Admin/get-category-products/get-
 import { EditProductComponent } from './Admin/edit-product/edit-product.component';
 import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
 import { ProfileComponent } from './User/profile/profile.component';
+import { GetAllVouchersComponent } from './Admin/get-all-vouchers/get-all-vouchers.component';
+import { AddVoucherComponent } from './Admin/add-voucher/add-voucher.component';
+import { EditVoucherComponent } from './Admin/edit-voucher/edit-voucher.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,9 +35,12 @@ const routes: Routes = [
       { path: 'getProdacts', component: GetProductsComponent },
       { path: 'addCategory', component: AddCategoryComponent },
       { path: 'addProduct', component: AddProductComponent },
+      { path: 'addVoucher', component: AddVoucherComponent },
+      { path: 'getVouchers', component: GetAllVouchersComponent },
       { path: 'getCategoryProducts/:id', component: GetCategoryProductsComponent },
       { path: 'editProduct/:id', component: EditProductComponent },
       { path: 'editCategory/:id', component: EditCategoryComponent },
+      { path: 'editVoucher/:id', component: EditVoucherComponent },
       { path: '', redirectTo: '/dashboard/getCategories', pathMatch: 'full' } // Default route
     ]
   },

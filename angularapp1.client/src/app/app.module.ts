@@ -24,6 +24,9 @@ import { EditProductComponent } from './Admin/edit-product/edit-product.componen
 import { EditCategoryComponent } from './Admin/edit-category/edit-category.component';
 import { ProfileComponent } from './User/profile/profile.component';
 import { EditProfileComponent } from './User/edit-profile/edit-profile.component';
+import { GetAllVouchersComponent } from './Admin/get-all-vouchers/get-all-vouchers.component';
+import { EditVoucherComponent } from './Admin/edit-voucher/edit-voucher.component';
+import { AddVoucherComponent } from './Admin/add-voucher/add-voucher.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { EditProfileComponent } from './User/edit-profile/edit-profile.component
     EditProductComponent,
     EditCategoryComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    GetAllVouchersComponent,
+    EditVoucherComponent,
+    AddVoucherComponent
   ],
   imports: [
     MatFormFieldModule,
